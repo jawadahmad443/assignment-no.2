@@ -1,0 +1,170 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+.header{
+	height: 100px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.mid-section{
+	height: 200px;
+	margin-top: 20px;
+	display: flex;
+}
+
+.box1{
+	width:30%;
+	height: 150px;
+	border:2px solid grey;
+	margin: 0px 8px;
+}
+.box1_img{
+	width: 95%;
+	height: 130px;
+	background-color: black;
+	margin: 5px;	
+}
+.box1_img p{
+	color: white;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 20px;
+}
+
+
+.last-section{
+	display: flex;
+	
+}
+.card_1{
+	width: 25%;
+	height: 180px;
+	margin-top: 10px;
+}
+
+.top_heading{
+	height: 50px;
+	display: flex;
+}
+.logo{
+	width: 50px;
+	height: 45px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	
+}
+.heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+
+
+/* ===== Default Fixes ===== */
+.mid-section{
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.last-section{
+    flex-wrap: wrap;
+}
+
+/* ===== Large Tablets / Small Laptops ===== */
+@media (max-width: 992px){
+
+    .header{
+        height: auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .box1{
+        width: 45%;
+        margin: 10px;
+    }
+
+    .card_1{
+        width: 45%;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+/* ===== Tablets ===== */
+@media (max-width: 768px){
+
+    .box1{
+        width: 90%;
+    }
+
+    .card_1{
+        width: 90%;
+    }
+
+    .header{
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .box1_img p{
+        font-size: 18px;
+    }
+}
+
+/* ===== Mobiles ===== */
+@media (max-width: 576px){
+
+    .container{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .header{
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .mid-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1{
+        width: 95%;
+        margin: 8px 0;
+    }
+
+    .last-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_1{
+        width: 95%;
+        height: auto;
+    }
+
+    .heading h5{
+        font-size: 14px;
+    }
+
+    .bottom_para p{
+        font-size: 14px;
+        line-height: 22px;
+        padding: 5px;
+    }
+}
